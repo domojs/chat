@@ -7,7 +7,8 @@
     "@domojs/settings": "^1.0.3",
     "@domojs/theme-default": "^1.0.18",
     "@types/request": "^2.0.7",
-    "@types/ws": "^3.2.0"
+    "@types/ws": "^3.2.0",
+    "snyk": "^1.68.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.2.16"
@@ -19,8 +20,11 @@
   "name": "@domojs/chat",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "tsc -p src"
+    "prepublishOnly": "tsc -p src",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "typings": "dist/server/index.d.ts",
-  "version": "1.0.14"
+  "version": "1.0.14",
+  "snyk": true
 }
