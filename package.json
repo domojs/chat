@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/domojs/chat#readme",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "dist/server/index.js",
   "name": "@domojs/chat",
   "repository": {
     "type": "git",
