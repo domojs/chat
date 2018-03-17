@@ -10,8 +10,8 @@
     "@domojs/chat": "^1.0.0",
     "@domojs/chat-date": "^1.0.0",
     "request": "^2.83.0",
-    "sugar": "^2.0.4",
-    "snyk": "^1.68.1"
+    "snyk": "^1.68.1",
+    "sugar": "^2.0.4"
   },
   "deprecated": false,
   "description": "",
@@ -34,6 +34,6 @@
     "snyk-protect": "snyk protect"
   },
   "typings": "dist/server/index.d.ts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "snyk": true
 }
