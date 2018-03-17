@@ -34,6 +34,6 @@
     "snyk-protect": "snyk protect"
   },
   "typings": "dist/server/index.d.ts",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "snyk": true
 }
