@@ -12,8 +12,8 @@
     send "^0.16.1"
 
 "@akala/client@^1.0.10", "@akala/client@^1.0.17", "@akala/client@^1.0.9":
-  version "1.0.71"
-  resolved "https://registry.yarnpkg.com/@akala/client/-/client-1.0.71.tgz#31e8aab387fdb976d17f93a3b531de2022dad941"
+  version "1.0.73"
+  resolved "https://registry.yarnpkg.com/@akala/client/-/client-1.0.73.tgz#0c0a934a40dc8d3053d20ba88efa426547f652ed"
   dependencies:
     "@akala/core" "^1.0.46"
     "@akala/json-rpc-ws" "^4.1.21"

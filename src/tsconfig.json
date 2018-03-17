@@ -6,7 +6,7 @@
         "declaration": true,
         "target": "es6",
         "moduleResolution": "node",
-        "module": "commonjs",
+        "module": "none",
         "outDir": "../dist"
     },
     "exclude": [
