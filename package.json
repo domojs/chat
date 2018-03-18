@@ -7,10 +7,12 @@
   },
   "dependencies": {
     "@akala/server": "^1.0.42",
-    "@domojs/chat-date": "^1.0.0",
     "request": "^2.83.0",
     "snyk": "^1.68.1",
     "sugar": "^2.0.4"
+  },
+  "peerDependencies": {
+    "@akala/client": "^1.0.73"
   },
   "deprecated": false,
   "description": "",
