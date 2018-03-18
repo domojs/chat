@@ -1,4 +1,4 @@
-///<reference types='@domojs/theme-default/dist/tile' />
+///<reference types='@domojs/theme-default/dist/client/tile' />
 ///<reference types='@akala/client' />
 
 
