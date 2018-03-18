@@ -13,7 +13,10 @@ akala.injectWithName(['$router'], function (router: akala.HttpRouter)
             return akala.when(akala.map(interpreters, (connection) =>
             {
                 return this.$proxy(connection).receive(language);
-            }));
+            })).then(function (values)
+            {
+                return;
+            });
         },
         registerAsInterpreter: function (dummy, connection: Connection)
         {
