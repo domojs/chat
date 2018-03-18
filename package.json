@@ -6,6 +6,7 @@
     "url": "https://github.com/domojs/chat/issues"
   },
   "dependencies": {
+    "@akala/client": "^1.0.73",
     "@akala/server": "^1.0.42",
     "request": "^2.83.0",
     "snyk": "^1.68.1",
@@ -36,6 +37,6 @@
     "snyk-protect": "snyk protect"
   },
   "typings": "dist/server/index.d.ts",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "snyk": true
 }
