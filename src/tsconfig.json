@@ -7,7 +7,8 @@
         "target": "es6",
         "moduleResolution": "node",
         "module": "none",
-        "outDir": "../dist"
+        "outDir": "../dist",
+        "keyofStringsOnly": true
     },
     "exclude": [
         "dist",

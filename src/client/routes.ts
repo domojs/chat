@@ -1,4 +1,4 @@
-///<reference types="@akala/client" />
+import * as akala from '@akala/client';
 
 interface Scope extends akala.IScope<Scope>
 {

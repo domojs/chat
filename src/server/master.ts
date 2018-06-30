@@ -3,29 +3,29 @@ import * as akala from '@akala/server';
 import { Connection } from '@akala/json-rpc-ws';
 import * as ws from 'ws';
 
-akala.injectWithName(['$router'], function (router: akala.HttpRouter)
-{
-    var interpreters: Connection[] = [];
+var interpreters: Connection[] = [];
 
-    akala.createServerFromMeta(chat.meta)(router, '/chat', {
-        register: function (language: chat.Language)
+@akala.server(chat.meta, { jsonrpcws: true })
+class Api
+{
+    public register(language: chat.Language)
+    {
+        return akala.when(akala.map(interpreters, (connection) =>
         {
-            return akala.when(akala.map(interpreters, (connection) =>
-            {
-                return this.$proxy(connection).receive(language);
-            })).then(function (values)
-            {
-                return;
-            });
-        },
-        registerAsInterpreter: function (dummy, connection: Connection)
+            return akala.api.jsonrpcws(chat.meta).createClientProxy(connection).receive(language);
+        })).then(function (values)
         {
-            var connectionIndex = interpreters.push(connection);
-            if (connection.socket instanceof ws)
-                connection.socket.on('close', function ()
-                {
-                    interpreters.splice(connectionIndex, 1);
-                })
-        }
-    });
-})();
+            return;
+        });
+    }
+
+    public registerAsInterpreter(dummy, connection: Connection)
+    {
+        var connectionIndex = interpreters.push(connection);
+        if (connection.socket instanceof ws)
+            connection.socket.on('close', function ()
+            {
+                interpreters.splice(connectionIndex, 1);
+            })
+    }
+}

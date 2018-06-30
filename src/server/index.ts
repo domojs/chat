@@ -7,28 +7,29 @@ import './api';
 import * as language from './language';
 import * as akala from '@akala/server';
 import { AssetRegistration } from '@akala-modules/core'
+import { Client, Connection } from '@akala/json-rpc-ws';
 
 var debug = akala.log('domojs:chat');
 
-akala.injectWithName(['$master', '$isModule', AssetRegistration.name], function (master: akala.worker.MasterRegistration, isModule: (m: string) => boolean, va: PromiseLike<AssetRegistration>)
+akala.injectWithName(['$master', '$isModule'], function (master: akala.worker.MasterRegistration, isModule: (m: string) => boolean)
 {
     if (isModule('@domojs/chat'))
     {
         master(module.filename, './master', './language');
-        va.then(function (va)
+        akala.injectWithNameAsync([AssetRegistration.name, '$agent.chat'], function (va: AssetRegistration, client: Client<Connection>)
         {
             va.register('/js/routes.js', require.resolve('../routes'));
             va.register('/js/tiles.js', require.resolve('../tile'));
-        });
-        akala.worker.createClient('chat').then(function (client)
-        {
-            language.meta.createClient(client)({
-                receive: function (language)
+
+            akala.client(language.meta, { jsonrpcws: true })(
+                class
                 {
-                    console.log(language);
-                    require(language.path);
-                }
-            });
+                    public receive(language)
+                    {
+                        console.log(language);
+                        require(language.path);
+                    }
+                });
         })
     }
 })();
