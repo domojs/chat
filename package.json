@@ -20,7 +20,7 @@
   "devDependencies": {
     "@akala/client": "^2.0.42",
     "@akala/server": "^2.0.28",
-    "@types/ws": "^3.2.0",
+    "@types/ws": "^6.0.1",
     "popper.js": "^1.14.3"
   },
   "homepage": "https://github.com/domojs/chat#readme",
