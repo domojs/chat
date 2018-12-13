@@ -6,7 +6,7 @@
     "url": "https://github.com/domojs/chat/issues"
   },
   "dependencies": {
-    "snyk": "^1.68.1",
+    "snyk": "^1.88.0",
     "sugar": "^2.0.4"
   },
   "peerDependencies": {
