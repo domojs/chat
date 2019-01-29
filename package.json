@@ -6,7 +6,7 @@
     "url": "https://github.com/domojs/chat/issues"
   },
   "dependencies": {
-    "snyk": "^1.68.1",
+    "snyk": "^1.123.0",
     "sugar": "^2.0.4"
   },
   "peerDependencies": {
@@ -37,7 +37,9 @@
     "build:js:routes": "browserify -x @akala/client -x @akala/core dist/client/routes.js -o dist/routes.js",
     "build:js:tile": "browserify -x @akala/client -x @akala/core -i @domojs/theme-default/dist/tile dist/client/tile.js -o dist/tile.js",
     "prepublishOnly": "npm run build",
-    "build": "npm run build:js && npm run build:js:routes && npm run build:js:tile"
+    "build": "npm run build:js && npm run build:js:routes && npm run build:js:tile",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "typings": "dist/server/index.d.ts",
   "version": "1.0.22",
