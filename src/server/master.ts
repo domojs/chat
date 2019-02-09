@@ -5,7 +5,7 @@ import * as ws from 'ws';
 
 var interpreters: Connection[] = [];
 
-@akala.server(chat.meta, { jsonrpcws: true })
+akala.api.server(chat.meta, { jsonrpcws: true })
 class Api
 {
     public register(language: chat.Language)

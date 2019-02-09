@@ -16,12 +16,12 @@ akala.injectWithName(['$master', '$isModule'], function (master: akala.worker.Ma
     if (isModule('@domojs/chat'))
     {
         master(module.filename, './master', './language');
-        akala.injectWithNameAsync([AssetRegistration.name, '$agent.chat'], function (va: AssetRegistration, client: Client<Connection>)
+        akala.injectWithNameAsync([AssetRegistration.name, '$agent.api/@domojs/chat'], function (va: AssetRegistration, client: Client<Connection>)
         {
             va.register('/js/routes.js', require.resolve('../routes'));
             va.register('/js/tiles.js', require.resolve('../tile'));
 
-            akala.client(language.meta, { jsonrpcws: true })(
+            akala.api.client(language.meta, { jsonrpcws: true })(
                 class
                 {
                     public receive(language)
