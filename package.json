@@ -24,7 +24,7 @@
     "@akala/server": "^2.1.12",
     "@domojs/theme-default": "^1.1.24",
     "@types/debug": "^4.1.0",
-    "@types/ws": "^6.0.1",
+    "@types/ws": "^7.2.2",
     "popper.js": "^1.14.7"
   },
   "homepage": "https://github.com/domojs/chat#readme",
