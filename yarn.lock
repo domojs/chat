@@ -30,7 +30,7 @@
   optionalDependencies:
     "@akala-modules/authentication" "^0.1.7"
 
-"@akala/client@^2.0.71", "@akala/client@^2.1.4", "@akala/client@^2.1.63":
+"@akala/client@^2.0.71", "@akala/client@^2.1.4", "@akala/client@^2.1.72":
   version "2.1.72"
   resolved "https://registry.yarnpkg.com/@akala/client/-/client-2.1.72.tgz#702a2e94aec510949f2e0c52cfa0491e8058ef85"
   integrity sha512-rG5f0OWWb5IQXDkEKVC5LmBnMqkCn8p5o7bYeyH04GpZ2M/SaUnwhaUMyvsIHiFIIobB7ONmRgaeP/YmXUoLwA==
@@ -59,7 +59,7 @@
     utils-merge "^1.0.0"
     ws "^6.1.3"
 
-"@akala/core@^4.0.0":
+"@akala/core@^4.0.6":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@akala/core/-/core-4.0.6.tgz#ec20f5df97ed79e705cc5a87c9bbdec2b13fc5dc"
   integrity sha512-OKHZqlhG12AJtnjfOryFqJHIliECwvDjThfkW6yESkiwEUbffy3Aaeoddf3sCR8Jq8uPssIc8EoLvqL92vp7gQ==
@@ -148,12 +148,12 @@
     uuid "^3.3.2"
 
 "@domojs/theme-default@^1.1.24":
-  version "1.2.35"
-  resolved "https://registry.yarnpkg.com/@domojs/theme-default/-/theme-default-1.2.35.tgz#cf71f4681fb40c60140ffabfdb9cf0f51f19e296"
-  integrity sha512-AOZaX1R5Eomkd1nbBEAq3MH91VOrY0UGWoZ4bcnZzBDmutVPuc5yoUuFjnkTvZA07SWrRb2sLeevKaLzuDg5Xg==
+  version "1.2.36"
+  resolved "https://registry.yarnpkg.com/@domojs/theme-default/-/theme-default-1.2.36.tgz#de2a405b5afab8b83e7c83d4522cec8d3d826994"
+  integrity sha512-3XJvfw8NR8kC1HYiqOZw1yhzEgut3WNiguWKElCOH01aaeFQCLp1pMvk8QiiakISR29+vivJ8gBXyuy4UXeSKw==
   dependencies:
-    "@akala/client" "^2.1.63"
-    "@akala/core" "^4.0.0"
+    "@akala/client" "^2.1.72"
+    "@akala/core" "^4.0.6"
     "@fortawesome/fontawesome-common-types" "^0.2.28"
     "@fortawesome/fontawesome-svg-core" "^1.2.28"
     "@fortawesome/free-brands-svg-icons" "^5.13.0"
