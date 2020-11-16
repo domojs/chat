@@ -20,7 +20,7 @@
   "description": "",
   "devDependencies": {
     "@akala-modules/core": "^1.1.3",
-    "@akala/client": "^2.0.71",
+    "@akala/client": "^3.1.0",
     "@akala/server": "^2.1.12",
     "@domojs/theme-default": "^1.1.24",
     "@types/debug": "^4.1.0",
