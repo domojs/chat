@@ -148,9 +148,9 @@
     uuid "^3.3.2"
 
 "@domojs/theme-default@^1.1.24":
-  version "1.2.36"
-  resolved "https://registry.yarnpkg.com/@domojs/theme-default/-/theme-default-1.2.36.tgz#de2a405b5afab8b83e7c83d4522cec8d3d826994"
-  integrity sha512-3XJvfw8NR8kC1HYiqOZw1yhzEgut3WNiguWKElCOH01aaeFQCLp1pMvk8QiiakISR29+vivJ8gBXyuy4UXeSKw==
+  version "1.2.38"
+  resolved "https://registry.yarnpkg.com/@domojs/theme-default/-/theme-default-1.2.38.tgz#013cbaf4c1fe71b35a35237d1e5339741f3904ac"
+  integrity sha512-mlJiQzl0za6RGibShl/T2CMcfqgDcd1IBp0bPqgsPb3wHz7SNwF7nWKcPFvWnOsq0TLmt20GtLBodNmkAYd9ZQ==
   dependencies:
     "@akala/client" "^2.1.72"
     "@akala/core" "^4.0.6"
@@ -160,10 +160,9 @@
     "@fortawesome/free-solid-svg-icons" "^5.13.0"
     "@popperjs/core" "^2.4.0"
     bootstrap "^4.5.0"
-    jquery "^3.5.1"
     require-optional "^0.4.0"
     sass-loader "^8.0.2"
-    snyk "^1.321.0"
+    snyk "^1.332.1"
 
 "@fortawesome/fontawesome-common-types@^0.2.28":
   version "0.2.28"
@@ -1840,11 +1839,6 @@ isomorphic-fetch@^2.2.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-jquery@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
-  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
-
 js-yaml@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
@@ -3305,7 +3299,7 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.126.0, snyk@^1.321.0:
+snyk@^1.126.0, snyk@^1.332.1:
   version "1.431.1"
   resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.431.1.tgz#1e360dae1b63d83f74fe90979f7b9a0fb1607aa7"
   integrity sha512-OW48lG89ffLsSZPHwsjfdqQcu3XG6aRQOkwASPCgTAGcVcnXzS9XHB89h0gLsDzk0fZRskEVgYpvXdh4RFjNqA==
